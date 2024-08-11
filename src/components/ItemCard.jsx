@@ -1,6 +1,14 @@
 import React from "react";
 
-function ItemCard({ image, title, price, quantity, author }) {
+function ItemCard({
+  image,
+  title,
+  price,
+  quantity,
+  author,
+  handleClick,
+  item,
+}) {
   return (
     <div className="flex flex-col p-5 hover:shadow-lg rounded-lg cursor-pointer">
       <div className="flex justify-center">
@@ -10,7 +18,10 @@ function ItemCard({ image, title, price, quantity, author }) {
         <p className="font-bold">{title}</p>
         <p className="text-slate-500 text-xs">-{author}</p>
         <p className="font-semibold">Price- ₹{price}</p>
-        <button className="bg-blue-600 hover:bg-blue-800 rounded-xl py-2 mx-auto px-4 text-white">
+        <button
+          onClick={() => handleClick(item)}
+          className="bg-blue-600 hover:bg-blue-800 rounded-xl py-2 mx-auto px-4 text-white"
+        >
           Add to Cart
         </button>
       </div>
