@@ -2,16 +2,15 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1 className=" text-center text-3xl font-bold underline>Shopping Cart">
-        Shopping Cart
-      </h1>
-    </>
+    <div className="max-w-screen-2xl mx-auto mt-5">
+      <Navbar />
+    </div>
   );
 }
 
