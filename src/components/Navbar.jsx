@@ -5,7 +5,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="rounded-lg flex justify-between items-center bg-slate-700 py-5 px-10">
+    <nav className="rounded-lg flex justify-between items-center bg-blue-600 py-5 px-10 text-white">
       <div className="font-bold text-3xl cursor-pointer">Shopping cart</div>
       <div className=" cursor-pointer">
         <FontAwesomeIcon className="text-3xl" icon={faCartShopping} />
