@@ -8,7 +8,9 @@ function App() {
 
   return (
     <>
-      <h1>Shopping Cart</h1>
+      <h1 className=" text-center text-3xl font-bold underline>Shopping Cart">
+        Shopping Cart
+      </h1>
     </>
   );
 }
